@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+    background-color: #6bdae2;
+  }
+
+  .menu-lateral {
+    width: 130px;
+    background-color: #1e1e40;
+    color: white;
+    padding: 2rem 1rem;
+  }
+  
+  .logo {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .navegacao a {
+    display: block;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .conteudo-principal {
+    flex: 1;
+    padding: 1.8rem;
+  }
+  
+  .caixa-pesquisa {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 4rem;
+  }
+  
+  .caixa-pesquisa input {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+
+  .container-cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .cartao {
+    background-color: #f9f6ff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    
+    
+
+  }
+  
+  .cabecalho-cartao {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .avatar {
+    background-color: #c4aaf7;
+    color: #1f1542;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.8rem;
+  }
+  
+  .cartao h3 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .cartao small {
+    color: #555;
+  }
+  
+  .cartao p {
+    font-size: 0.9rem;
+    color: #13133a;
+  }
+  
+  .botoes-cartao {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .botao-ver-perfil {
+    margin-top: auto;
+    align-self: flex-start;
+  }
+  
+  .cartao button,
+  .cartao a {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration:none;
+  }
+
+  .botao-aprovar {
+    background-color: #432a7e;
+    color: white;
+    border: 2px solid #ffffff;
+  }
+  .botao-rejeitar {
+    background-color: #ffffff;
+    color:  #2f6da0;
+    border: 2px solid  #2f6da0; 
+  }
+
+.cartao .botao-link {
+    width: auto !important;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center !important;
+    margin-top: 3rem !important;
+    padding: 0.3rem 2.5rem !important;
+    font-size: 1.0rem !important;
+    background-color: white;
+    border: 2px solid #2f6da0;
+    color: #2f6da0;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+  }
+.cartao {
+    position: relative;   
+    overflow: hidden;     
+    padding-top: 0.5rem;      
+  }
+  
+  .cartao::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;                     
+    background-color: #b2cacaad;      
+    border-top-left-radius: 10px;    
+    border-top-right-radius: 10px;
+  }
+
+  .cabecalho-cartao > * {
+    position: relative;
+    z-index: 1;
+  }
+  
