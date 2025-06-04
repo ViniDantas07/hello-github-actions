@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #c1b8f0;
+}
+
+.container {
+  display: flex;
+}
+
+.barra-lateral {
+  background-color: #ffffff;
+  color: rgb(22, 0, 82);
+  width: 120px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 20px;
+}
+
+.menu a {
+  color: rgb(8, 0, 77);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+.conteudo {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #b7d4f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #001e49;
+}
+.titulo {
+  padding-right: 320px;
+  margin-bottom: 30px;
+  color: #001c42;
+}
+
+.etapa {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;   
+  max-width: 800px;
+}
+
+
+.cabecalho-etapa {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #1d3557;
+}
+
+.etapa p {
+  margin-bottom: 8px;
+}
+
+.etapa small {
+  display: block;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.barra-progresso {
+  background-color: #eee;
+  border-radius: 10 px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progresso {
+  background-color: #0f014e;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.destaque {
+  color: #e76f51;
+  font-weight: bold;
+}
